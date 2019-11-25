@@ -56,7 +56,6 @@ module WordsCounter
         request = Net::HTTP::Get.new uri
 
         http.request request do |response|
-          # open 'large_file', 'w' do |io|
             response.read_body do |chunk|
               model = ModelRepository.new(chunk)
               model.createBulk

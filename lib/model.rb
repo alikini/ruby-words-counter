@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require('active_record')
 require('bulk_insert')
+require('xxhash')
 
 module WordsCounter
 
@@ -71,7 +72,8 @@ module WordsCounter
 
     class << self
       def calc(word)
-        word.to_i(36) % 64
+        seed = 12345
+        XXhash.xxh32(word, seed) % 64
       end
     end
 
