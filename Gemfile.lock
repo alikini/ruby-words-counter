@@ -1,0 +1,74 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (6.0.1)
+      activesupport (= 6.0.1)
+    activerecord (6.0.1)
+      activemodel (= 6.0.1)
+      activesupport (= 6.0.1)
+    activesupport (6.0.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.2)
+    backports (3.15.0)
+    bulk_insert (1.7.0)
+      activerecord (>= 3.2.0)
+    concurrent-ruby (1.1.5)
+    hashie (4.0.0)
+    hashie-forbidden_attributes (0.1.1)
+      hashie (>= 3.0)
+    i18n (1.7.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.13.0)
+    multi_json (1.14.1)
+    mustermann (1.0.3)
+    mysql2 (0.5.2)
+    nio4r (2.5.2)
+    otr-activerecord (1.4.1)
+      activerecord (>= 4.0, < 6.1)
+      hashie-forbidden_attributes (~> 0.1)
+    puma (4.3.0)
+      nio4r (~> 2.0)
+    rack (2.0.7)
+    rack-contrib (2.1.0)
+      rack (~> 2.0)
+    rack-protection (2.0.7)
+      rack
+    sinatra (2.0.7)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.7)
+      tilt (~> 2.0)
+    sinatra-contrib (2.0.7)
+      backports (>= 2.8.2)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.7)
+      sinatra (= 2.0.7)
+      tilt (~> 2.0)
+    thread_safe (0.3.6)
+    tilt (2.0.10)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    zeitwerk (2.2.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  bulk_insert
+  mysql2
+  otr-activerecord
+  puma
+  rack-contrib
+  sinatra
+  sinatra-contrib
+
+RUBY VERSION
+   ruby 2.6.1p33
+
+BUNDLED WITH
+   2.0.1
