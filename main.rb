@@ -48,10 +48,11 @@ post '/process' do
     open(file, "w") do |f|
       f.write body
     end
+
     local_file_processor = WordsCounter::LocalFileProcessor.new(file)
     controller = WordsCounter::Controller.new(local_file_processor)
-  end
 
+  end
 
   controller.process_income_data
 # child_pid = fork do

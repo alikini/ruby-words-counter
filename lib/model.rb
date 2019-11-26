@@ -57,7 +57,7 @@ module WordsCounter
           location = location  + 1
         end
         WordCount.init(partition)
-        WordCount.bulk_insert do |worker|
+        WordCount.bulk_insert set_size: 100000 do |worker|
           records_list.each do |attrs|
             worker.add(attrs)
           end
