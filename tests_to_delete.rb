@@ -14,7 +14,7 @@ WordsCounter::Storage.init()
 #
 #
 
-processor = WordsCounter::LocalFileProcessor.new('./sample_data/bible.txt')
+processor = WordsCounter::LocalFileProcessor.new('./sample_data/data.txt')
 processor.process
 
 

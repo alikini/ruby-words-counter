@@ -27,3 +27,6 @@ multiple consumers processing and storing that data.
 - More optimization might be introduced: implementation of bloom filter for example to avoid db accesses for never seen words
 
  
+ ## Performance benchmarks:
+ - Disturbed song "Voices": https://www.youtube.com/watch?v=0eJkXZcRrkA : 20ms
+ - Bible : 2 seconds
