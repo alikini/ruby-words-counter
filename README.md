@@ -30,3 +30,9 @@ multiple consumers processing and storing that data.
  ## Performance benchmarks:
  - Disturbed song "Voices": https://www.youtube.com/watch?v=0eJkXZcRrkA : 20ms
  - Bible : 2 seconds
+ 
+ 
+ ## Important to know:
+ - **heaven** appears 206 times in bible
+ - **hell** appears only 24
+ Everything is gonna be alright !
