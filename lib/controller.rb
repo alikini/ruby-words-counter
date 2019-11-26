@@ -36,6 +36,7 @@ module WordsCounter
         puts "File not exists with path: #{file_path}"
         raise 'File not exists'
       end
+      # todo: validate that file_path is in under a specific directory (security check)
       @file_path = file_path
     end
 
@@ -43,7 +44,7 @@ module WordsCounter
       open(@file_path, "rb") do |f|
         f.each_chunk { |chunk|
           model = ModelRepository.new(chunk)
-          model.createBulk
+          model.create_bulk
           model.persist
         }
       end
@@ -63,7 +64,7 @@ module WordsCounter
         http.request request do |response|
             response.read_body do |chunk|
               model = ModelRepository.new(chunk)
-              model.createBulk
+              model.create_bulk
               model.persist
             end
           # end
