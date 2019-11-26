@@ -19,10 +19,6 @@ describe 'remote files processor' do
       result = controller.retrieve_stats 'talkkkk'
       expect(result ).to eql(0)
     end
-
   end
-
-
-
 end
 

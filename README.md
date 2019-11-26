@@ -10,7 +10,9 @@ Process body text: curl -X POST -H "Content-Type: text/plain" --data "this is ra
 Process remote file: http://localhost:9292/process?url=https://www.w3.org/TR/PNG/iso_8859-1.txt
 
 ## Run:
-Just type *puma* in terminal in project's location
+- run docker-compose up to spinup the db
+- create schema : words_counter
+- type *puma* in terminal in project's location
 
 ## Implementation details:
 
