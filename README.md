@@ -35,4 +35,5 @@ multiple consumers processing and storing that data.
  ## Important to know:
  - **heaven** appears 206 times in bible
  - **hell** appears only 24
- Everything is gonna be alright !
+
+**Everything is gonna be alright !**
