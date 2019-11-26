@@ -1,12 +1,8 @@
 require 'bundler/setup'
 require_relative 'main'
 require_relative 'lib/storage'
+require_relative './extent_file'
 
-class File
-  def each_chunk(chunk_size = 10000000)
-    yield read(chunk_size) until eof?
-  end
-end
 
 WordsCounter::Storage.init()
 run Sinatra::Application

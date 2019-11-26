@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require_relative 'model'
-require('active_record')
+require 'active_record'
 require 'net/http'
 
 module WordsCounter
@@ -16,11 +16,16 @@ module WordsCounter
 
     def retrieve_stats(word)
       word = word.downcase.force_encoding("UTF-8")
-      Words.init(Partitioner.calc(word))
+      query_result = Words.init(Partitioner.calc(word))
           .where(word: word)
           .group(:word)
           .select('sum(counter) as appearances')
           .order(:word)
+      if query_result.first.nil?
+        0
+      else
+        query_result.first.appearances
+      end
     end
 
   end

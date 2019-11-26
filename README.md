@@ -9,6 +9,9 @@ Process local file example: http://localhost:9292/process?file_path=./sample_dat
 Process body text: curl -X POST -H "Content-Type: text/plain" --data "this is raw data" http://localhost:9292/process
 Process remote file: http://localhost:9292/process?url=https://www.w3.org/TR/PNG/iso_8859-1.txt
 
+## Run:
+Just type *puma* in terminal in project's location
+
 ## Implementation details:
 
 Sinatra with ruby ( no rails ). Data persisted to mySQL ( docker compose attached to the project ).

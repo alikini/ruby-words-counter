@@ -19,11 +19,7 @@ get '/stats' do
   controller = WordsCounter::Controller.new(nil)
   res = controller.retrieve_stats(word.to_s)
   status 200
-  if res.first.nil?
-    body(0.to_s)
-  else
-    body(res.first.appearances.to_s)
-  end
+  res.to_s
 end
 
 post '/process' do
