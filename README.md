@@ -21,7 +21,6 @@ Process remote file: http://localhost:9292/process?url=https://www.w3.org/TR/PNG
 - create schema : words_counter
 - type *puma* in terminal in project's location
 
-http://localhost:9292/process?url=https://www.w3.org/TR/PNG/iso_8859-1.txt
 
 ## Implementation details
 
