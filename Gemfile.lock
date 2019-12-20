@@ -50,7 +50,7 @@ GEM
       pry (~> 0.10)
     puma (4.3.0)
       nio4r (~> 2.0)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-contrib (2.1.0)
       rack (~> 2.0)
     rack-protection (2.0.7)
